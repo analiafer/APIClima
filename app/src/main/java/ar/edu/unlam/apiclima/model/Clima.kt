@@ -1,14 +1,13 @@
 package ar.edu.unlam.apiclima.model
 
-import java.time.LocalDateTime
+data class Clima(
 
-data class Clima (
+    val ob_time: String,
+    val city_name: String,
+    val code: Int,
 
-    val ob_time : LocalDateTime,
-    val city_name : String,
-    val code : Int,
-    val description : String,
-    val temp : Int,
-    val app_temp : Int
+    val weather: Weather,
+    val temp: Double,
+    val app_temp: Double
 
 )
